@@ -1,3 +1,5 @@
+"use strict"
+
 function getArrayParams(...arr) {
 	let min = Infinity;
 	let max = -Infinity;
@@ -39,8 +41,8 @@ function differenceMaxMinWorker(...arr) {
 		return 0;
 	}
 
-	minValue = Math.min(...arr);
-	maxValue = Math.max(...arr);
+	const minValue = Math.min(...arr);
+	const maxValue = Math.max(...arr);
 	let difference = (maxValue - minValue);
 
 	return difference;
